@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Outfit&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  flex-direction: column;
+}
+.layer {
+  display: flex;
+  padding-right: 10px;
+  background-color: hsl(0, 0%, 100%);
+  width: 460px;
+  box-shadow: 6px 6px 20px hsl(241, 81%, 54%, 0.1);
+  border-radius: 16px;
+}
+
+.summary {
+  width: 230px;
+  padding: 16px 28px 16px 18px;
+}
+.result {
+  width: 230px;
+  padding: 16px 18px 16px 18px;
+  background: -webkit-linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 16px;
+}
+.your_result {
+  font-size: 18px;
+  color: hsla(0, 0%, 100%, 0.7);
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  padding-bottom: 14px;
+}
+.circle-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 14px;
+}
+.circle {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  background: -webkit-linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.score {
+  color: hsl(0, 0%, 100%);
+  font-size: 35px;
+  font-weight: 800;
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+}
+.total {
+  color: hsla(0, 0%, 100%, 0.7);
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  font-size: 12px;
+}
+.great {
+  font-size: 19px;
+  color: hsla(0, 0%, 100%);
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  padding-bottom: 12px;
+  font-weight: 500;
+}
+.text {
+  color: hsla(0, 0%, 100%, 0.7);
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  padding: 0 5px 12px 5px;
+  font-weight: 400;
+}
+.summary_text {
+  font-size: 16px;
+  color: hsl(224, 30%, 27%);
+  font-weight: 600;
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  padding-bottom: 14px;
+}
+.summary-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding-bottom: 14px;
+}
+.summary-box div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 11px 10px 11px;
+  border-radius: 5px;
+}
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+.reaction p:nth-child(1) {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  color: hsl(0, 100%, 67%);
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  font-size: 13.5px;
+}
+.reaction p:nth-child(2) {
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  color: hsla(224, 30%, 27%, 0.4);
+  font-size: 14px;
+}
+.reaction p:nth-child(2) span {
+  color: hsl(224, 30%, 27%);
+  font-weight: 500;
+}
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+.memory p:nth-child(1) {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  color: hsl(39, 100%, 56%);
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  font-size: 13.5px;
+}
+.memory p:nth-child(2) {
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  color: hsla(224, 30%, 27%, 0.4);
+  font-size: 14px;
+}
+.memory p:nth-child(2) span {
+  color: hsl(224, 30%, 27%);
+  font-weight: 500;
+}
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+.verbal p:nth-child(1) {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  color: hsl(166, 100%, 37%);
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  font-size: 13.5px;
+}
+.verbal p:nth-child(2) {
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  color: hsla(224, 30%, 27%, 0.4);
+  font-size: 14px;
+}
+.verbal p:nth-child(2) span {
+  color: hsl(224, 30%, 27%);
+  font-weight: 500;
+}
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+.visual p:nth-child(1) {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  color: hsl(234, 85%, 45%);
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  font-size: 13.5px;
+}
+.visual p:nth-child(2) {
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  color: hsla(224, 30%, 27%, 0.4);
+  font-size: 14px;
+}
+.visual p:nth-child(2) span {
+  color: hsl(224, 30%, 27%);
+  font-weight: 500;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.continue {
+  width: 108%;
+  border: none;
+  padding: 9px 0 9px 0;
+  cursor: pointer;
+  background: hsl(224, 30%, 27%);
+  color: white;
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  border-radius: 20px;
+}
+.continue:hover {
+  background: -webkit-linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsl(241, 72%, 46%)
+  );
+}
+@media (max-width: 375px) {
+  body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    flex-direction: column;
+  }
+  .layer {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0px;
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    box-shadow: 6px 6px 20px hsl(241, 81%, 54%, 0.1);
+    border-radius: 0px;
+  }
+
+  .summary {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 28px 16px 18px;
+  }
+  .result {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 18px 16px 18px;
+    background: -webkit-linear-gradient(
+      hsl(252, 100%, 67%),
+      hsl(241, 81%, 54%)
+    );
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  .continue {
+    width: 100%;
+    border: none;
+    padding: 9px 0 9px 0;
+    cursor: pointer;
+    background: hsl(224, 30%, 27%);
+    color: white;
+    font-family: "EB Garamond", serif;
+    font-family: "Outfit", sans-serif;
+    border-radius: 20px;
+  }
+}
